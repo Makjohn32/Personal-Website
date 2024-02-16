@@ -1,0 +1,200 @@
+:root {
+    --bg-color: black;
+    --typewriterSpeed: 6s;
+    --typewriterCharacters: 24;
+  }
+.Welcome{
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 10px;
+    color: whitesmoke;
+    text-shadow: 10px;
+    
+}
+
+.Info{
+    text-align: center;
+    font-family: sans-serif;
+    padding: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: white;
+}
+
+
+
+.h3{
+    text-align: center;
+    padding:10px;
+    padding-left: 20px;
+    font-family: sans-serif;
+    color: white;
+}
+
+.h1{
+    text-align: center;
+    color:white;
+    padding:10px;
+}
+
+.p{
+    font-family: sans-serif;
+    color: white;
+    padding: auto;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li{
+    float:left;
+}
+
+li a:hover{
+    background-color:white;
+    color:black;
+}
+
+a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+}
+
+body{
+    background-image: url('Website-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Links{
+    line-height: 30px;
+    font-family:Arial;
+}
+
+img{
+    border-radius: 50%;
+    font-size: 30px;
+    text-align:left;
+    text-decoration: none;
+    
+}
+.contact_form{
+    color:blueviolet;
+    padding-left:30%;
+    padding-top: 10%;
+}
+.contact_box{
+    width: 500px;
+    background-color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+   
+    
+}
+form{
+    margin: 35px;
+}
+.input-field{
+    width: 400px;
+    height: 40px;
+    margin-top: 20px; 
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 14px;
+    outline: none;
+}
+.textareafield {
+    height: 150px;
+    padding-top: 10px;
+}
+button{
+    border-radius: 20px;
+    color: #fff;
+    margin-top: 18px;
+    padding:10px;
+    background-color: #47c35a;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+   
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+button:hover{
+    font-size:30px;
+}
+h1 {
+    padding-left: 100px;
+    font-size: 30px;
+    position: relative;
+    font-family: "Source Code Pro", monospace;
+    position: relative;
+    width: max-content;
+  }
+  
+  h1::before,
+  h1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  h1::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 1s forwards;
+  }
+  
+  h1::after {
+    width: 0.125em;
+    background: black;
+    animation: typewriter var(--typewriterSpeed)
+        steps(var(--typewriterCharacters)) 1s forwards,
+      blink 750ms steps(var(--typewriterCharacters)) infinite;
+  }
+  
+  .subtitle {
+    color: hsl(0 0% 0% / 0.7);
+    font-size: 2rem;
+    font-weight: 400;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
+  }
+  
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    to {
+      background: transparent;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+ 

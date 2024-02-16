@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="Links">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="About_Me.html">About Me</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="contact_form">
+        
+        <div class="contact_box">
+            <h1>Contact with me</h1>
+            <form>
+                <input type="text" id="name"class="input-field" placeholder="Name..">
+                <input type="email" id="email"class="input-field" placeholder="Email..">
+                <textarea type="text" id="msg" class="input-field textareafield" placeholder="Your Message" oninput="isFull()"></textarea>
+                <button type="button" class="btn" onclick="isEmpty()">Send Message</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
